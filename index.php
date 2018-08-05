@@ -4,7 +4,8 @@ header("Content-type: text/html; charset=utf-8");
 error_reporting(-1);
 require_once 'funcs.php';
 
-if(!empty($_POST)){
+if (!empty($_POST))
+{
 	save_mess();
 	header("Location: {$_SERVER['PHP_SELF']}");
 	exit;
@@ -15,6 +16,7 @@ $messages = array_mess($messages);
 // print_arr($messages);
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
