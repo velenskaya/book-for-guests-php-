@@ -18,12 +18,11 @@ function array_mess($messages)
 	return array_reverse($messages);
 }
 
-function get_format_message($message
-	{
+function get_format_message($message) 
+{
 	return explode('|', $message);
 }
 
-function print_arr($arr)
-{
+function print_arr($arr){
 	echo '<pre>' . print_r($arr, true) . '</pre>';
 }
